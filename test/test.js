@@ -1,9 +1,22 @@
-var mochi = require('mochi')
+require('chai').should()
 
 describe('pr-edge', function () {
-  var prEdge = require('../')
+  var edge = require('../')
   
-  it('', function () {
+  it('', function (done) {
+
+    var hello = edge(function () {/*
+
+      async (name) => {
+        return String.Format("Hello {0}", name);
+      }
+
+    */})
+
+    hello('friend').then(function (x) {
+      x.should.equal('Hello friend')
+    })
+    .then(done, done)
 
   })
 })

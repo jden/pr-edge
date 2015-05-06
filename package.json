@@ -3,15 +3,27 @@
   "author": "jden <jason@denizac.org>",
   "version": "1.0.0",
   "description": "promisified edge.js",
-  "keywords": ["promise", "promises", "edge", "edgejs", "edge.js"],
+  "keywords": [
+    "promise",
+    "promises",
+    "edge",
+    "edgejs",
+    "edge.js"
+  ],
   "main": "index.js",
   "scripts": {
-    "test": "mochi"
+    "test": "mocha"
   },
   "repository": "git@github.com:jden/pr-edge.git",
   "license": "ISC",
   "readmeFilename": "README.md",
   "devDependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.4",
     "mochi": "0.3.0"
+  },
+  "dependencies": {
+    "edge": "^0.10.1",
+    "polyfill-promise": "^4.0.0"
   }
 }
